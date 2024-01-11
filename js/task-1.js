@@ -1,7 +1,7 @@
 const totalCategories = document.querySelectorAll(".item");
-console.log(`Number of categories: ${totalCategories.length} .`);
+console.log(`Number of categories: ${totalCategories.length}`);
 
-console.log(document.querySelectorAll("h2"));
+
 
 // const categoriesArray = [...totalCategories]
 //   .map(
