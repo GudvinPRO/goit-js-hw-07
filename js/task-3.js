@@ -6,7 +6,9 @@ const nameOut = document.querySelector('#name-output');
 const getInputValue = ({ currentTarget }) => {
   if (currentTarget.value.trim() !== '') {
     nameOut.textContent = currentTarget.value.trim();
-  } else {
+  } 
+  
+  else {
     nameOut.textContent = 'Anonymous';
   }
 };
