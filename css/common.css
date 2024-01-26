@@ -202,6 +202,8 @@ img {
 .login-form {
   width: 408px;
   background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
 
   display: flex;
   flex-direction: column;
