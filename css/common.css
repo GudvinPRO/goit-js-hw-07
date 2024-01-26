@@ -201,7 +201,13 @@ img {
 
 .login-form {
   width: 408px;
+  background-color: #ffffff;
 
+  display: flex;
+  flex-direction: column;
+}
+
+.form_input {
   display: flex;
   flex-direction: column;
 }
