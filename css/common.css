@@ -196,3 +196,12 @@ img {
   padding-bottom: 8px;
   padding-left: 16px;
 }
+
+/* --------------------------------------task-4--------------------------------------*/
+
+.login-form {
+  width: 408px;
+
+  display: flex;
+  flex-direction: column;
+}
