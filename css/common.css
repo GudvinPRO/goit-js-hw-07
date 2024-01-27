@@ -289,6 +289,10 @@ img {
   border: 1px;
 }
 
+.change-color:hover {
+  background-color: #141ff3;
+}
+
 .title_text {
   color: #2E2F42;
   max-width: 200px;
