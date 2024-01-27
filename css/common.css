@@ -256,7 +256,21 @@ img {
 
 /* --------------------------------------task-5--------------------------------------*/
 
+.widget {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 100px 88px;
+
+  align-items: center;
+  justify-content: center;
+}
+
 .change-color {
+  width: 148px;
   color: #FFF;
 
   font-family: Montserrat;
@@ -277,6 +291,9 @@ img {
 
 .title_text {
   color: #2E2F42;
+  max-width: 200px;
+
+  margin: 0;
 
   font-family: Montserrat;
   font-size: 16px;
@@ -284,8 +301,4 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.04em;
-}
-
-.color_box {
-  
 }
