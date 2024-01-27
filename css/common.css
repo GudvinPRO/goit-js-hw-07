@@ -257,7 +257,7 @@ img {
 /* --------------------------------------task-5--------------------------------------*/
 
 .widget {
-  width: 400px;
+  max-width: 420px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -295,14 +295,93 @@ img {
 
 .title_text {
   color: #2E2F42;
-  max-width: 200px;
-
   margin: 0;
-
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.04em;
+}
+
+/* --------------------------------------task-6--------------------------------------*/
+
+#controls {
+  max-width: 486px;
+  display: flex;
+  padding: 32px;
+  gap: 16px;
+  border-radius: 8px;
+  background: #F6F6FE;
+}
+
+.controls_input {
+  padding: 8px 72px;
+  text-align: center;
+  
+  border-radius: 8px;
+  border: 1px solid #808080;
+
+  color: #2E2F42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.controls_button_create {
+  width: 120px;
+  padding: 8px 16px;
+  text-align: center;
+  
+  border: 1px;
+  border-radius: 8px;
+  background: #4E75FF;
+
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; 
+  letter-spacing: 0.04em;
+}
+
+.controls_button_create:hover {
+  background: #2451f3;
+}
+
+.controls_button_destroy {
+  width: 120px;
+  padding: 8px 16px;
+  text-align: center;
+  
+  border: 1px;
+  border-radius: 8px;
+  background: #FF4E4E;
+
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; 
+  letter-spacing: 0.04em;
+}
+
+.controls_button_destroy:hover {
+  background: #f70c0c;
+}
+
+#boxes {
+  min-width: 486px;
+
+  float:left; 
+  overflow:hidden;
+
+  border-radius: 8px;
+  background: #F6F6FE;
+  padding: 32px;
 }
