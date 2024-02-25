@@ -1,4 +1,4 @@
-document.body.style.backgroundColor = '#e0e0e0';
+
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
