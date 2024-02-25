@@ -12,6 +12,7 @@ const createBtnEl = document.querySelector('button[data-create]');
 const destroyBtnEl = document.querySelector('button[data-destroy]');
 const divBoxesEl = document.getElementById('boxes');
 
+
 divBoxesEl.style.display = 'flex';
 divBoxesEl.style.flexWrap = 'wrap';
 divBoxesEl.style.alignItems = 'center';
@@ -30,20 +31,23 @@ createBtnEl.addEventListener('click', () => {
   inputNumberEl.value = '';
 });
 
+
+function createBoxes(amount) {
+  
+  const boxesArr = [];
+  for (let i = 0; i < amount; i += 1) {
+    const size = 30 + i * 10;
+    const div = `<div class="item" style="display: block; margin-right: 30px; margin-bottom: 30px; background-color: ${getRandomHexColor()}; width: ${size}px; height: ${size}px;"></div>`;
+    boxesArr.push(div);
+    destroyBoxes();
+  }
+  divBoxesEl.insertAdjacentHTML('beforeend', boxesArr.join(''));
+}
+
+
 destroyBtnEl.addEventListener('click', destroyBoxes);
 
 function destroyBoxes() {
   inputNumberEl.value = '';
   divBoxesEl.innerHTML = '';
-}
-
-function createBoxes(amount) {
-  let size = 30;
-  const boxesArr = [];
-  for (let i = 0; i < amount; i += 1) {
-    size += 10 * i;
-    const div = `<div class="item" style="display: block; margin-right: 30px; margin-bottom: 30px; background-color: ${getRandomHexColor()}; width: ${size}px; height: ${size}px;"></div>`;
-    boxesArr.push(div);
-  }
-  divBoxesEl.insertAdjacentHTML('beforeend', boxesArr.join(''));
 }
